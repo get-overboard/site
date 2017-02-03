@@ -55,6 +55,48 @@ a:hover
 	text-decoration: none;
 }
 
+/* div classes */
+#engineering-team, #business-team{
+	margin: 0 auto; 
+	margin-top: 1cm;
+	width: 100%;
+}
+#team{
+	width: 900px;
+  	margin-left: auto ;
+  	margin-right: auto ;
+}
+
+div.e1, div.e2, div.e3, div.b1, div.b2, div.b3 {
+	width: 300px;
+	height: 300px;
+}
+
+div.e1 h1, div.e2 h1, div.e3 h1, div.b1 h1, div.b2 h1, div.b3 h1{
+	text-align: center;
+	font-weight: 300;
+	color: #CFCFCF;
+	letter-spacing: -1px;
+	font-size: 2.00em;
+} 
+
+div.e1 p, div.e2 p, div.e3 p, div.b1 p, div.b2 p, div.b3 p {
+    text-align: center;
+    margin-top: 1em;
+} 
+
+div.page{
+	width: 900px;
+	height: 800px;
+}
+
+div.video{
+	margin: 0 auto; 
+	margin-top: 5px;
+	width: 100%;
+}
+
+
 /* Image Style 1 */
 
 	.image-style1
@@ -63,6 +105,11 @@ a:hover
 		width: 100%;
 	}
 	
+
+	.img-circle {
+    border-radius: 50%;
+    margin-left: 25px;
+	}
 /* Buttons Style 1 */
 
 
@@ -750,6 +797,8 @@ a:hover
 	header h2
 	{
 		display: block;
+		/* to change*/
+		color: #ffffff;
 		margin: 0;
 		padding: 0;
 	}
@@ -865,6 +914,7 @@ a:hover
 	{
 		position: relative;
 		padding: 6em 0em;
+		/*to change*/
 		background: #0c0e0f;
 		text-align: center;
 	}

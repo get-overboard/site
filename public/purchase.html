@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	MegaCorp by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>MegaCorp by TEMPLATED</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+        <script src="js/init.js"></script>
+		
+
+        <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyC3pHsdhZwF1R4bk7nI4Rl33mBH3lml568",
+            authDomain: "get-overboard-37dbb.firebaseapp.com",
+            databaseURL: "https://get-overboard-37dbb.firebaseio.com",
+            storageBucket: "get-overboard-37dbb.appspot.com",
+            messagingSenderId: "518782164803"
+          };
+          firebase.initializeApp(config);
+
+            var url = "https://get-overboard-37dbb.firebaseio.com/inquiries"
+            var firebaseRef = new Firebase(url);
+            firebaseRef.set({
+                name: "test",
+                email: "hi",
+                post "hello",
+                date: date()});
+
+          /*  var name = $('#inquiry-name').text();
+            var email = $('inquiry-email').text();
+            var post = $('#inquiry-post').text.();
+            var date = Date();
+
+            function inquire() {
+              firebase.database().ref('inquiries/').set({
+                name: name,
+                email: email,
+                content : post
+                date: date
+              });
+            }
+
+          /*  function inquire()
+            {
+                
+                var inquiry = {"name": name, "email": email, "content": post, "date": date}
+                var inquiryRef = firebaseRef.push();
+                inquiryRef.set(inquiry);
+            }
+
+            var submit = document.getElementById('submitButton')[0];
+            submit.onclick = inquire();*/
+        </script>
+
+        <noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<div id="header-wrapper">
+        	<div id="header" class="container">
+            	<div id="logo"><h1><a href="index.html">Overboard</a></h1></div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li class="current_page_item"><a href="purchase.html">Buy Now</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+		</div>
+		<!-- Header Ends Here -->
+
+		<!-- Page -->
+        	<div id="page">
+            	<div class="container">
+                	<div class="row">
+                    
+                    	<div id="content" class="12u skel-cell-important">
+                        	<article>
+                            	<header>
+                                    <h2 class="main-title">Sorry we are currently still in our development phase.</h2>
+                                </header>
+                                    <p style="font-size:160%;"> We would still love to hear from you though! Send us a quick note and we'll get back to you as soon as possible</p>
+                                    <br>
+                                <form>
+                                    <div class="inquiry-name">
+                                        <input type="text" placeholder="Enter Name" size="48">
+                                    </div>
+                                    <div class="inquiry-email">
+                                        <input type="text" placeholder="Email" size="48">
+                                    </div>
+                                    <div class="inquiry-post">
+                                        <textarea type="text" placeholder="Comments"  style="width:300px; height:150px;"></textarea>
+                                    </div>
+                                    <div class="inquiry-updates">
+                                        <input type="checkbox" name="update" value="isUpdate"> I would like to be kept in the loop with all updates! <br>
+                                    </div>
+                                    <button id="submitButton" type="submit" class="submit" fontsize="100px">Submit</button>
+                                </form> 
+                                
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+		<!-- /Page -->
+
+		<!-- Copyright -->
+            <div id="copyright" class="container">
+                Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+            </div>
+
+
+	</body>
+</html>
